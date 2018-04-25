@@ -5,7 +5,8 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
 /**
- * Description :
+ * Description : 只有java代码有效,kotlin的话不知道使用注解的方式有没有效果,
+ * 本类中没有override的方法无效
  *
  * @author XQ Yang
  * @date 2018/4/23  20:12
