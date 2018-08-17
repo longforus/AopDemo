@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -29,8 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+val TAG = "MainActivity"
     private fun showWaterDialog(it: View) {
+       Log.e(TAG, "showWaterDialog ")
         val inflate = LayoutInflater.from(this).inflate(R.layout.dialog_bottom, null)
         inflate.minimumWidth = this.windowManager.defaultDisplay.width
         val window = waterDialog?.window
